@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD><TITLE>Thebongotz</TITLE></HEAD>
+        <BODY>
+           <HEADER>
+            <H1 align="center" style="font-size:60px ;" ><DIV STYLE="background-color: rgb(13, 13, 157); COLOR:WHITE">WELCOME TO MOVIE STORE </DIV></H1>
+        <A HREF=" " >Home   </A>
+        <A HREF=" ">Movies</A>
+        <A HREF=" ">Games</A>
+        <A HREF=" ">Trendings</A>   
+        <hr>
+
+        <div id="searchResults"></div>
+<script>
+        // Get the search query from the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchQuery = urlParams.get('query');
+        
+        // Search for the query in the assets repository
+        const searchResults = [];
+        fetch('assets/') // Assumes the assets repository is in the same directory
+          .then(response => response.text())
+          .then(data => {
+            // Split the retrieved data into individual pages or files
+            const pages = data.split('\n');
+          
+            // Loop through each page and search for the query
+            pages.forEach(page => {
+              if (page.includes(searchQuery)) {
+                searchResults.push(page);
+              }
+            });
+        
+            // Display the search results in the DOM
+            const resultsContainer = document.getElementById('searchResults');
+            if (searchResults.length > 0) {
+              resultsContainer.innerHTML = "<h2>Search Results:</h2>" + searchResults.join('<br>');
+            } else {
+              resultsContainer.innerHTML = "<h2>No results found.</h2>";
+            }
+          });
+
+
+
+              
+        </script>      
+                
+                
+ <h4>Check Out New Mvies</h4> 
+        </main>
+<footer align="center" style="background-color: rgba(195, 185, 185, 0.787); color:black">
+<hr>
+Author:Son san<br>
+&copy;copyright reserved<br>
+<small><a href=" ......">moviestore@gmail.com</a></small>
+</footer>
+    </BODY>
+
+        </BODY>
+
+    </HEAD>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        

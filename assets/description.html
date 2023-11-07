@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD><TITLE>Thebongotz</TITLE></HEAD>
+        <BODY>
+           <HEADER>
+            <H1 align="center"><DIV STYLE="background-color: rgb(13, 13, 157); COLOR:WHITE">WELCOME TO MOVIE STORE </DIV></H1>
+        <A HREF=" " >Home   </A>
+        <A HREF=" ">Movies</A>
+        <A HREF=" ">Games</A>
+        <A HREF=" ">Trendings</A>   
+        <hr>
+
+
+        <body>
+          <input type="text" id="searchInput" placeholder="Search...">
+          <button onclick="search()">Search</button>
+        
+          <script>
+            function search() {
+              var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+              var matchingPages = pages.filter(function(page) {
+                return page.title.toLowerCase().includes(searchTerm);
+              });
+        
+              if (matchingPages.length > 0) {
+                var firstMatchingPage = matchingPages[0];
+                window.location.href = firstMatchingPage.url;
+              } else {
+                alert("No matching pages found.");
+              }
+            }
+          </script>
+        </body>
+        
+        <p align="left">  <img src="leo.jpg" alt="Description of image 1" height="300" width="300"><br>
+            <body>
+            
+                    <P><U><B>MOVIE DESCRIPTION</P></U></B>
+                   
+             <B>YEAR OF RELEASE:</B><BR><BR>
+                 <B>MAIN CHARACTER:</B><BR><BR>
+                 <B>CATEGORY:</B>
+                 <BR><br>
+                    <B> DURATION:</B><BR>
+                        
+                    </p>
+                    DOWNLOAD THIS MOVIE
+                <BR><br>
+              
+                    <p align="center"> <BUTTON STYLE="background-color: rgb(7, 11, 203); FONT-SIZE : 25PX; border-radius: 5PX; COLOR:WHITE"> DOWNLOAD VIDEO</BUTTON> <br><br>
+                        <BUTTON STYLE="background-color: green; FONT-SIZE: 25PX; border-radius: 5PX; COLOR:WHITE"> DOWNLOAD SUBTITLE</BUTTON></p>
+                        <br>
+                        <a href="main.html"><p align="right" >Go to episode 02</p> </a> 
+                        <a href="main.html"><p align="right">Go to episode 01</p></a> 
+                
+                    
+                
+
+
+
+
+              <br><br>
+              
+              
+                
+               
+
+             <a href="main.html"> <h4>Check Out New Movies</h4></a> 
+            </main>
+
+
+
+        </HEADER>
+        <main> <BR>
+            <BR>
+             
+              
+              
+              
+              
+              
+                
+                
+ <h4>Check Out New Mvies</h4> 
+        </main>
+<footer align="center" style="background-color: rgba(195, 185, 185, 0.787); color:black">
+    <hr>
+    <p>Author:Son san</p>
+    <p>&copy;copyright reserved<br></p>
+    <small><a href=" ......">moviestore@gmail.com</a></small>
+    </footer>
+    </BODY>
+
+        </BODY>
+
+    </HEAD>
+</HTML>

@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <HTML>
-    <HEAD><TITLE>THIS IS OUR TEST</TITLE></HEAD>
+    <HEAD><TITLE>Thebongotz</TITLE></HEAD>
         <BODY>
            <HEADER>
-            <H1 align="center"><DIV STYLE="background-color: rgb(13, 13, 157); COLOR:WHITE">WELCOME TO MOVIE STORE </DIV></H1>
+            <H1 align="center" style="font-size:60px ;" ><DIV STYLE="background-color: rgb(13, 13, 157); COLOR:WHITE">WELCOME TO MOVIE STORE </DIV></H1>
         <A HREF=" " >Home   </A>
         <A HREF=" ">Movies</A>
         <A HREF=" ">Games</A>
@@ -11,25 +11,12 @@
         <hr>
 
 
-        <body>
-          <input type="text" id="searchInput" placeholder="Search...">
-          <button onclick="search()">Search</button>
+        <form action="search.html" method="GET">
+          <input type="text" name="query" placeholder="Enter your search query...">
+          <button type="submit">Search</button>
+        </form>
         
-          <script>
-            function search() {
-              var searchTerm = document.getElementById("searchInput").value.toLowerCase();
-              var matchingPages = pages.filter(function(page) {
-                return page.title.toLowerCase().includes(searchTerm);
-              });
-        
-              if (matchingPages.length > 0) {
-                var firstMatchingPage = matchingPages[0];
-                window.location.href = firstMatchingPage.url;
-              } else {
-                alert("No matching pages found.");
-              }
-            }
-          </script>
+          
         </body>
         
 
@@ -56,28 +43,28 @@
               
               <div class="image-container">
                 <div>
-                  <img src="leo.jpg" alt="Description of image 1" width="250" height="250">
+                  <img src="images/leo.jpg" alt="Description of image 1" width="250" height="250">
+                 <a href="assets/description.html"> <button class="download-button">Download</button>
+                 </a></div>
+                <div>
+                  <img src="images/leo.jpg" alt="Description of image 2" width="250" height="250">
                   <button class="download-button">Download</button>
                 </div>
                 <div>
-                  <img src="leo.jpg" alt="Description of image 2" width="250" height="250">
-                  <button class="download-button">Download</button>
-                </div>
-                <div>
-                  <img src="leo.jpg" alt="Description of image 3" width="250" height="250">
+                  <img src="images/leo.jpg" alt="Description of image 3" width="250" height="250">
                   <button class="download-button">Download</button>
                 </div>
           
                  <div>
-                  <img src="leo.jpg" alt="Description of image 1" width="250" height="250">
+                  <img src="images/leo.jpg" alt="Description of image 1" width="250" height="250">
                   <button class="download-button">Download</button>
                 </div>
                 <div>
-                  <img src="leo.jpg" alt="Description of image 2" width="250" height="250">
+                  <img src="images/leo.jpg" alt="Description of image 2" width="250" height="250">
                   <button class="download-button">Download</button>
                 </div>
                 <div>
-                  <img src="leo.jpg" alt="Description of image 3" width="250" height="250">
+                  <img src="images/leo.jpg" alt="Description of image 3" width="250" height="250">
                   <button class="download-button">Download</button>
                 </div>
                 
